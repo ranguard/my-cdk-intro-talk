@@ -1,0 +1,33 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": [
+      {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      {
+        "id": "StoreStack",
+        "path": "StoreStack",
+        "children": [
+          {
+            "id": "MyFirstBucket",
+            "path": "StoreStack/MyFirstBucket",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "StoreStack/MyFirstBucket/Resource"
+              },
+              {
+                "id": "Notifications",
+                "path": "StoreStack/MyFirstBucket/Notifications"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

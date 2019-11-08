@@ -1,0 +1,19 @@
+{
+  "name": "simple_s3",
+  "version": "1.0.0",
+  "description": "A demo",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/ranguard/cdk-talk-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-cdk/aws-s3": "^1.15.0",
+    "@aws-cdk/core": "^1.15.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "version": "1.10.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "StoreStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "StoreStack.template.json"
+      },
+      "metadata": {
+        "/StoreStack/MyFirstBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFirstBucketB8884501",
+            "trace": [
+              "new Bucket (/Users/leo/git/cdk-talk-examples/code/simple_s3/node_modules/@aws-cdk/aws-s3/lib/bucket.js:330:26)",
+              "new HelloCdkStack (/Users/leo/git/cdk-talk-examples/code/simple_s3/index.js:8:9)",
+              "Object.<anonymous> (/Users/leo/git/cdk-talk-examples/code/simple_s3/index.js:15:1)",
+              "Module._compile (internal/modules/cjs/loader.js:936:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)",
+              "Module.load (internal/modules/cjs/loader.js:790:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:703:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:999:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.14.0",
+      "@aws-cdk/cx-api": "1.14.0",
+      "@aws-cdk/aws-s3": "1.14.0",
+      "@aws-cdk/aws-events": "1.14.0",
+      "@aws-cdk/aws-iam": "1.14.0",
+      "@aws-cdk/region-info": "1.14.0",
+      "@aws-cdk/aws-kms": "1.14.0",
+      "jsii-runtime": "node.js/v12.9.1"
+    }
+  }
+}

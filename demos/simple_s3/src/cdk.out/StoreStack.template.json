@@ -1,0 +1,15 @@
+{
+  "Resources": {
+    "MyFirstBucketB8884501": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "demo-for-you-all"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "StoreStack/MyFirstBucket/Resource"
+      }
+    }
+  }
+}
